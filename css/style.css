@@ -620,6 +620,16 @@ ul#nav li.current a {
     padding-top: 1rem;
 }
 
+.timeline_desc a,
+.timeline_desc a:visited {
+    color: #838c95;
+}
+
+.timeline_desc a:hover,
+.timeline_desc a:focus {
+    color: #11ABB0;
+}
+
 
 /* ------------------------------------------------------------------ */
 /* h. Contact Section
