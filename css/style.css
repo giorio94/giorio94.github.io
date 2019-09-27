@@ -402,13 +402,13 @@ header .scrolldown a {
     line-height: 42px;
     margin-left: -29px;
     position: absolute;
-    
+
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    
+
     width: 42px;
 }
 
@@ -440,7 +440,9 @@ header .scrolldown a:focus {
     z-index: 100;
 }
 
-.opaque { background-color: #333; }
+.opaque {
+    background-color: #333;
+}
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn {
@@ -507,6 +509,11 @@ ul#nav li.current a {
 #about p {
     color: #DDD;
     line-height: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 #about .profile-pic {
@@ -528,7 +535,6 @@ ul#nav li.current a {
 .resume {
     background: #fff;
     overflow: hidden;
-    padding-bottom: 72px;
     padding-top: 90px;
 }
 
@@ -550,12 +556,6 @@ ul#nav li.current a {
 .resume .main-col {
     padding-right: 10%;
 }
-
-/*.education {
-    border-bottom: 1px solid #E8E8E8;
-    margin-bottom: 48px;
-    padding-bottom: 24px;
-}*/
 
 .timeline {
     margin-top: 1.8rem;
@@ -629,6 +629,99 @@ ul#nav li.current a {
 .timeline_desc a:focus {
     color: #11ABB0;
 }
+
+/* ------------------------------------------------------------------ */
+/* e. Publications Section
+/* ------------------------------------------------------------------ */
+
+.publications {
+    padding-bottom: 72px;
+}
+
+.panel .panel-heading {
+    border: 1px solid #11ABB0;
+    margin-top: 5px;
+    padding: 1.5rem;
+    padding-right: 5rem;
+    cursor: pointer;
+    position: relative;
+
+   -webkit-transition: all .4s ease-in-out;
+   -moz-transition: all .4s ease-in-out;
+   -o-transition: all .4s ease-in-out;
+   transition: all .4s ease-in-out;
+}
+
+.panel .panel-heading:after {
+    content: "+";
+    color: #11ABB0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 50px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50px, -50%);
+}
+
+.panel .panel-heading h5 {
+    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.panel .panel-heading p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 85%;
+    margin: 0;
+}
+
+.panel .expanded {
+    background: #11ABB0;
+}
+
+.panel .expanded:after {
+    content: "\2013";
+    color: #EBEEEE;
+}
+
+.panel .expanded h5 {
+    color: #EBEEEE;
+}
+
+.panel .expanded p {
+    color: #DDD;
+}
+
+.panel .panel-body {
+    padding: 1.5rem;
+    margin-top: 5px;
+    border: 1px solid #E9E9E9;
+    display: none;
+}
+
+.panel .panel-body p {
+    font-size: 90%;
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.panel .panel-body a {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .15rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
 
 
 /* ------------------------------------------------------------------ */

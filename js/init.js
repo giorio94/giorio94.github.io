@@ -44,11 +44,10 @@ jQuery(document).ready(function ($) {
     var navigation_links = $("#nav-wrap a");
 
     sections.waypoint({
-        
+
         handler: function (direction) {
 
             var active_section = $(this);
-            console.log(active_section);
             if (direction === "up") active_section = active_section.prev();
 
             var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
@@ -101,6 +100,19 @@ jQuery(document).ready(function ($) {
             }
         }
 
+    });
+
+    /*----------------------------------------------------*/
+    /*	Fade In/Out Publication Drtails
+    ------------------------------------------------------*/
+
+    $('.panel-heading').click(function () {
+        header = $(this);
+        target_num = header.attr('id').split('-')[1];
+        content_id = '#expandable-'.concat(target_num);
+
+        $(this).toggleClass("expanded")
+        $(content_id).slideToggle()
     });
 
 });
