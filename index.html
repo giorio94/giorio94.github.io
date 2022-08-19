@@ -1,338 +1,667 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!-->
 <html class="no-js" lang="en">
-<!--<![endif]-->
-
 <head>
 
-    <!--- Basic Page Needs
-   ================================================== -->
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
     <title>Marco Iorio - Home Page</title>
-    <meta name="description" content="The personal webpage of Marco Iorio, a Ph.D. Student in computer science at Politecnico di Torino, Italy.">
+    <meta name="description" content="The personal webpage of Marco Iorio, Open Source Engineer and Postdoctoral Researcher at Politecnico di Torino, Italy.">
 
-    <!-- Mobile Specific Metas
+    <!-- mobile specific metas
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Fonts
-    ================================================== -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400">
-    <link rel="stylesheet" href="css/icons/fontello.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/vendor.min.css">
 
-    <!-- Script
+    <!-- script
     ================================================== -->
-    <script src="https://cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://kit.fontawesome.com/2350d68da2.js" crossorigin="anonymous"></script>
 
-    <!-- Favicons
-	================================================== -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD6ZGG41JC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HD6ZGG41JC');
+    </script>
 </head>
 
-<body>
+<body id="top">
 
-    <!-- Header
+    <!-- header
     ================================================== -->
-    <header id="home">
-
-        <nav id="nav-wrap">
-            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-            <ul id="nav" class="nav">
-                <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-                <li><a class="smoothscroll" href="#about">About</a></li>
-                <li><a class="smoothscroll" href="#education">Education</a></li>
-                <li><a class="smoothscroll" href="#publications">Publications</a></li>
-                <li><a class="smoothscroll" href="#contact">Contact</a></li>
-            </ul> <!-- end #nav -->
-        </nav> <!-- end #nav-wrap -->
-
-        <div class="row banner">
-            <div class="banner-text">
-                <h1 class="responsive-headline">I'm Marco Iorio.</h1>
-                <h3>Ph.D. Student, Politecnico di Torino, Italy</h3>
-
-                <hr />
-                <ul class="social">
-                    <li><a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#109;&#x61;&#114;&#x63;&#111;&#x2e;&#x69;&#111;&#x72;&#105;&#111;&#64;&#x70;&#x6f;&#x6c;&#x69;&#116;&#111;&#46;&#105;&#116;" aria-label="Send e-mail"><i class="icon-mail"></i></a></li>
-                    <li><a href="https://www.github.com/giorio94" aria-label="Open GitHub profile"><i class="icon-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/giorio94" aria-label="Open LinkedIn profile"><i class="icon-linkedin"></i></a></li>
-                    <li><a href="skype:marco.iorio_3" aria-label="Show Skype profile"><i class="icon-skype"></i></a></li>
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    <li><a class="smoothscroll" href="#projects">Projects</a></li>
+                    <li><a class="smoothscroll" href="#publications">Publications</a></li>
                 </ul>
+            </nav>
+        </div> <!-- end row -->
+
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>I'm Marco Iorio.</h1>
+                    <h3>Open Source Engineer &middot; Postdoctoral Researcher</h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#109;&#x61;&#114;&#x63;&#111;&#x2e;&#x69;&#111;&#x72;&#105;&#111;&#64;&#x70;&#x6f;&#x6c;&#x69;&#116;&#111;&#46;&#105;&#116;"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://www.github.com/giorio94"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/giorio94"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://scholar.google.com/citations?user=2HiiLSEAAAAJ&hl=it&oi=ao"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
             </div>
-        </div>
+        </div> <!-- s-hero__content -->
 
-        <p class="scrolldown">
-            <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-        </p>
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
 
-    </header> <!-- Header End -->
+    </section> <!-- end s-hero -->
 
 
-    <!-- About Section
-   ================================================== -->
-    <section id="about">
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
         <div class="row">
-
-            <div class="three columns">
-                <img class="profile-pic" src="images/profile-picture.jpg" alt="Profile picture" />
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/profile-picture.webp" alt="">
             </div>
-
-            <div class="nine columns main-col">
-
-                <h2>About Me</h2>
-
-                <p>I was born in Piedmont (Italy) in 1994. In 2016, I graduated cum laude from Politecnico di Torino with a Bachelor's Degree in Computer Science. Then, I pursued my studies in the same university, achieving a Master's Degree cum laude in 2018, with a thesis focused on cybersecurity aspects inherent vehicular networks.</p>
-                <p>Currently, I am a Ph.D. student at Politecnico di Torino, working on networking and security issues concerning vehicular technologies. My Ph.D. program is sponsored by Italdesign, a design and engineering company part of the Volkswagen Group.</p>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>I was born in Piedmont, Italy, in 1994. I received my Master's and PhD degree in Computer Engineering from Politecnico di Torino, Italy, respectively in 2018 and 2022. Currently, I'm a Postdoctoral Researcher at Politecnico di Torino, working as maintainer and core developer of <a href="https://liqo.io">Liqo</a>, an open-source project enabling dynamic and seamless Kubernetes multi-cluster topologies (675+ stars on GitHub).</p>
+                <p>During my PhD, I collaborated with Italdesign Giugiaro (Volkswagen group) towards the introduction of secure communication paradigms both on-board and among vehicles. Additionally, I explored the transparent support of advanced and resource demanding services thanks to edge computing, benefiting from computational offloading and the adoption of cloud-native approaches.</p>
+                <p>I'm also one of the founding members of <a href="https://github.com/netgroup-polito/CrownLabs/">CrownLabs</a>, an open-source project started in March 2020 at Politecnico di Torino to deliver remote computing laboratories (90+ stars on GitHub). Since then, I have been involved as maintainer in the design and development of the project, as well as I'm in charge of operating the Kubernetes-based CrownLabs infrastructure.</p>
                 <p>Besides loving anything related to technology, I am interested in TV shows and I like relaxing with crossword puzzles and long walks in the countryside.</p>
+            </div>
+        </div> <!-- end row -->
 
-            </div> <!-- end .main-col -->
+    </section> <!-- end s-about -->
 
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Postdoctoral Researcher</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Politecnico di Torino, Italy</span>
+                            <span class="resume-block__header-date">
+                                Feb 2022 - Present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>Working as maintainer and core developer of Liqo, including the following responsibilities:</p>
+                    <ul class="disc">
+                        <li>Design of new functionalities starting from high-level requirements.</li>
+                        <li>Implementation of new components extending Kubernetes according to the operator pattern.</li>
+                        <li>Development of a user-friendly CLI to interact with Liqo.</li>
+                        <li>Implementation of automatic build and test pipelines through GitHub Actions.</li>
+                        <li>Performance-driven benchmarking and optimization.</li>
+                        <li>Preparation of technical documentation, scientific papers and blog posts.</li>
+                        <li>Bug triage, peer reviews and mentoring.</li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Teaching Assistant</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Politecnico di Torino, Italy</span>
+                            <span class="resume-block__header-date">
+                                Oct 2019 - Present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>Teaching activities and preparation of new learning materials for the following university courses:</p>
+                    <ul class="disc">
+                        <li>Computer Networks &middot; B.S. in Computer Engineering</li>
+                        <li>Software Networking &middot; M.S. in Computer Engineering</li>
+                        <li>Cloud Computing &middot; M.S. in Computer Engineering</li>
+                        <li>Cloud Infrastructures and Networks &middot; II Level Specializing Master in Computer Engineering</li>
+                    </ul>
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">PhD Student</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Politecnico di Torino, Italy</span>
+                            <span class="resume-block__header-date">
+                                Nov 2018 - Jan 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>Performed in collaboration with Italdesign Giugiaro (Volkswagen group), my PhD explored the path towards more secure, hence safer vehicles, paving at the same time the way to support novel and resource demanding software services.</p>
+                    <p>The main research topics I faced during my PhD include:</p>
+                    <ul class="disc">
+                        <li>Security of in-vehicle and V2X communications.</li>
+                        <li>Performance and reliability requirements of distributed applications.</li>
+                        <li>Definition of a transparent continuum of computational resources and services across multiple independent infrastructures.</li>
+                    </ul>
+                    <p>In addition, I contributed to, and served as a maintainer for the following open-source projects:</p>
+                    <ul class="disc">
+                        <li>Liqo: dynamic and seamless Kubernetes multi‐cluster topologies.</li>
+                        <li>CrownLabs: a Kubernetes-based collaborative environment for remote computing laboratories.</li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Doctor of Philosophy - PhD, Computer Engineering</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Politecnico di Torino, Italy</span>
+                            <span class="resume-block__header-date">
+                                Nov 2018 - Jan 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        <b>Thesis:</b> Towards Novel Software Services in Future Vehicles<br />
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Master's Degree, Computer Engineering</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Politecnico di Torino, Italy</span>
+                            <span class="resume-block__header-date">
+                                Oct 2016 - Oct 2018
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        <b>Thesis:</b> Protecting In-Vehicle Services with a Secure SOME/IP Protocol<br />
+                        <b>Grade:</b> 110/110 cum laude<br />
+                        <b>Courses:</b> Computer Architectures &middot; System and Device Programming &middot; Software Engineering &middot; Network Services and Technologies &middot; Local Area Network Design &middot; Routing Architectures and Protocols &middot; Computer System Security &middot; Distributed Programming &middot; Mobile Application Development &middot; Database Management Systems &middot; Big Data
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Bachelor's Degree, Computer Engineering</h3>
+                        <p class="resume-block__header-meta">
+                            <span>Politecnico di Torino, Italy</span>
+                            <span class="resume-block__header-date">
+                                Oct 2013 - Sep 2016
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        <b>Grade:</b> 110/110 cum laude<br />
+                        <b>Courses:</b> Mathematical Analysis &middot; Physics &middot; Chemistry &middot; Electronics &middot; Computer Science &middot; Algorithms and Programming &middot; Object Oriented Programming &middot; Computer Systems &middot; Operating Systems &middot; Computer Networks &middot; Databases &middot; Automatic Control &middot; Visualization of Quantitative Information
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="projects" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3 class="h2">Projects</h3>
+            </div>
         </div>
-    </section> <!-- About Section End-->
 
-    <!-- Education Section
-    ================================================== -->
-    <section id="education" class="resume">
-        <div class="row">
+        <div class="row collapse block-large-1-3 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
 
-            <div class="three columns header-col">
-                <h1><span>Education</span></h1>
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/projects/icons/liqo.svg" alt="">
+                    <span>Liqo</span>
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/projects/icons/crownlabs.svg" alt="">
+                    <span>CrownLabs</span>
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/projects/icons/securevsomeip.svg" alt="">
+                    <span>Secure vsomeip</span>
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/projects/icons/apvanalyzer.svg" alt="">
+                    <span>APV Analyzer</span>
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="images/projects/icons/shareyourfiles.svg" alt="">
+                    <span>Share Your Files</span>
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="images/projects/icons/coiotesolver.svg" alt="">
+                    <span>CoIoTe Solver</span>
+                </a>
+            </div> <!-- end folio-item -->
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/projects/gallery/liqo.webp" alt="" />
+
+                <div class="modal-popup__desc">
+                    <h5>Liqo</h5>
+                    <p>Liqo (675+ stars on GitHub) is an open-source project that enables dynamic and seamless Kubernetes multi-cluster topologies, supporting heterogeneous on-premise, cloud and edge infrastructures. It abstracts remote pools of resources as virtual nodes attached to the local cluster, while featuring cross-cluster network and storage fabrics, as well as a dynamic discovery and peering module.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Kubernetes</li>
+                        <li>Multi-cluster</li>
+                        <li>Go</li>
+                        <li>CI/CD</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+
+                <a href="https://github.com/liqotech/liqo/" class="modal-popup__details">Visit on GitHub</a>
             </div>
+        </div> <!-- end modal -->
 
-            <div class="nine columns main-col">
-                <div class="timeline">
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <div class="modal-popup-img">
+                    <img src="images/projects/gallery/crownlabs.webp" alt="" />
+                    <p>
+                        <span>Photo by <a href="https://unsplash.com/@johnschno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Schnobrich</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                    </p>
+                </div>
 
-                    <div class="timeline_block">
-                        <div class="timeline_bullet"></div>
-                        <div class="timeline_header">
-                            <p class="timeline_timeframe">2018 - Present</p>
-                            <h3>Ph.D. Student</h3>
-                            <h5>Politecnico di Torino, Italy</h5>
-                        </div>
-                        <div class="timeline_desc">
-                            <p>
-                                <b>Title:</b> Towards Novel Software Services in Future Vehicles<br />
-                                <b>Tutor:</b> <a href="http://fulvio.frisso.net">prof. Fulvio Risso</a>
-                            </p>
-                        </div>
-                    </div>
+                <div class="modal-popup__desc">
+                    <h5>CrownLabs</h5>
+                    <p>CrownLabs (90+ stars on GitHub) is an open-source project started at Politecnico di Torino during the pandemic period to deliver remote computing laboratories. Since then, it has been leveraged with satisfaction by more than 5000 students. CrownLabs also successfully hosted multiple session of the Computer Science (first year course) exams, featuring the integration with the official “exams” platform of our university.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Kubernetes</li>
+                        <li>Devops</li>
+                        <li>Go</li>
+                        <li>CI/CD</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
 
-                    <div class="timeline_block">
-                        <div class="timeline_bullet"></div>
-                        <div class="timeline_header">
-                            <p class="timeline_timeframe">2016 - 2018</p>
-                            <h3>Master's Degree in Computer Engineering</h3>
-                            <h5>Politecnico di Torino, Italy</h5>
-                        </div>
-                        <div class="timeline_desc">
-                            <p>
-                                <b>Thesis title:</b> Protecting In-Vehicle Services with a Secure SOME/IP Protocol<br />
-                                <b>Final degree mark:</b> 110/110 cum laude
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline_block">
-                        <div class="timeline_bullet"></div>
-                        <div class="timeline_header">
-                            <p class="timeline_timeframe">2013 - 2016</p>
-                            <h3>Bachelor's Degree in Computer Engineering</h3>
-                            <h5>Politecnico di Torino, Italy</h5>
-                        </div>
-                        <div class="timeline_desc">
-                            <p><b>Final degree mark: </b>110/110 cum laude</p>
-                        </div>
-                    </div>
-
-                </div> <!-- end timeline -->
-            </div> <!-- main-col end -->
-        </div> <!-- end row -->
-    </section> <!-- Education Section End-->
-
-
-    <!-- Publications Section
-    ================================================== -->
-    <section id="publications" class="resume publications">
-        <div class="row">
-
-            <div class="three columns header-col">
-                <h1><span>Publications</span></h1>
+                <a href="https://github.com/netgroup-polito/CrownLabs/" class="modal-popup__details">Visit on GitHub</a>
             </div>
+        </div> <!-- end modal -->
 
-            <div class="nine columns main-col">
-
-                <div class="panel">
-                    <div id="expand-7" class="panel-heading">
-                        <h5>Computing Without Borders: The Way Towards Liquid Computing</h5>
-                        <p>Under review, preprint available on arXiv</p>
-                    </div>
-                    <div id="expandable-7" class="panel-body">
-                        <div class="abstract">
-                            <p><b>Abstract:</b>
-                                Despite the de-facto technological uniformity fostered by the cloud and edge computing paradigms, resource fragmentation across isolated clusters hinders the dynamism in application placement, leading to suboptimal performance and operational complexity. Building upon and extending these paradigms, we propose a novel approach envisioning a transparent continuum of resources and services on top of the underlying fragmented infrastructure, called liquid computing. Fully decentralized, multi-ownership-oriented and intent-driven, it enables an overarching abstraction for improved applications execution, while at the same time opening up for new scenarios, including resource sharing and brokering. Following the above vision, we present liqo, an open-source project that materializes this approach through the creation of dynamic and seamless Kubernetes multi-cluster topologies. Extensive experimental evaluations have shown its effectiveness in different contexts, both in terms of Kubernetes overhead and compared to other open-source alternatives.
-                            </p>
-                            <a href="https://arxiv.org/pdf/2204.05710.pdf" target="_blank" rel="noopener noreferrer">Read the article</a>
-                        </div>
-                    </div>
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <div class="modal-popup-img">
+                    <img src="images/projects/gallery/securevsomeip.webp" alt="" />
+                    <p>
+                        <span>Photo by <a href="https://pixabay.com/it/users/thedigitalartist-202249/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4743695">Pete Linforth</a> on <a href="https://pixabay.com/it//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4743695">Pixabay</a></span>
+                        &middot;
+                        <span>Icon by <a href="https://www.iconfinder.com/kmgdesignid">Kmg Design</a> on <a href="https://www.iconfinder.com">IconFinder</a></span>
+                    </p>
                 </div>
 
-                <div class="panel">
-                    <div id="expand-6" class="panel-heading">
-                        <h5>When Latency Matters: Measurements and Lessons Learned</h5>
-                        <p>In ACM SIGCOMM Computer Communication Review, 2021</p>
-                    </div>
-                    <div id="expandable-6" class="panel-body">
-                        <div class="abstract">
-                            <p><b>Abstract:</b>
-                                Several emerging classes of interactive applications are demanding for extremely low-latency to be fully unleashed, with edge computing generally regarded as a key enabler thanks to reduced delays. This paper presents the outcome of a large-scale end-to-end measurement campaign focusing on task-offloading scenarios, showing that moving the computation closer to the end-users, alone, may turn out not to be enough. Indeed, the complexity associated with modern networks, both at the access and in the core, the behavior of the protocols at different levels of the stack, as well as the orchestration platforms used in data-centers hide a set of pitfalls potentially reverting the benefits introduced by low propagation delays. In short, we highlight how ensuring good QoS to latency-sensitive applications is definitely a multi-dimensional problem, requiring to cope with a great deal of customization and cooperation to get the best from the underlying network.
-                            </p>
-                            <a href="papers/05-WhenLatencyMatters.pdf" target="_blank" rel="noopener noreferrer">Read the article</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel">
-                    <div id="expand-5" class="panel-heading">
-                        <h5>RAYGO: Reserve As You GO</h5>
-                        <p>In IEEE International Conference on Cloud and Big Data Computing (CBDCom 2021), Virtual, 2021</p>
-                    </div>
-                    <div id="expandable-5" class="panel-body">
-                        <div class="abstract">
-                            <p><b>Abstract:</b>
-                                The capability to predict the precise resource requirements of a microservice-based application is a very important problem for cloud services. In fact, the allocation of abundant resources guarantees an excellent quality of experience (QoE) for the hosted services, but it can translate into unnecessary costs for the cloud customer due to the reserved (but unused) resources. On the other side, poor resource provisioning may turn out in scarce performance when experiencing an unexpected peak of demand. This paper proposes RAYGO, a novel approach for dynamic resource provisioning to microservices in Kubernetes that (i) reliefs the customers from the definition of appropriate execution boundaries, (ii) ensures the right amount of resources at any time, according to the past and the predicted usage, and (iii) operates at the application level, acknowledging the dependency between multiple correlated microservices.
-                            </p>
-                            <a href="papers/04-ReserveAsYouGo.pdf" target="_blank" rel="noopener noreferrer">Read the article</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel">
-                    <div id="expand-4" class="panel-heading">
-                        <h5>Securing SOME/IP for In-Vehicle Service Protection</h5>
-                        <p>In IEEE Transactions on Vehicular Technology, 2020</p>
-                    </div>
-                    <div id="expandable-4" class="panel-body">
-                        <div class="abstract">
-                            <p><b>Abstract:</b>
-                                Although high-speed in-vehicle networks are being increasingly adopted by the industry to support emerging use cases, previous research already demonstrated that car hacking is a real threat. This paper formalizes a novel framework proposed to provide improved security to the emerging SOME/IP middleware, without introducing at the same time limitations in the communication patterns available. Most notably, the entire traffic matrix is designed to be configured using simple high-level rules, clearly stating who can talk to whom according to the service abstraction adopted by SOME/IP. Three incremental security levels are made available, accounting for different services being associated with different requirements. The core security protocol, encompassing a session establishment phase followed by the transmission of secured SOME/IP messages, has been formally verified, to prove its correctness in terms of authentication and secrecy properties. Performance-wise, in-depth experimental evaluations conducted with an extended version of vsomeip confirmed the introduction of quite limited penalties compared to the bare unsecured implementation.
-                            </p>
-                            <a href="papers/03-SecureSOMEIP-TVT.pdf" target="_blank" rel="noopener noreferrer">Read the article</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel">
-                    <div id="expand-3" class="panel-heading">
-                        <h5>CrownLabs – A Collaborative Environment to Deliver Remote Computing Laboratories</h5>
-                        <p>In IEEE Access, 2020</p>
-                    </div>
-                    <div id="expandable-3" class="panel-body">
-                        <div class="abstract">
-                            <p><b>Abstract:</b>
-                                The coronavirus pandemic hit the entire education sector hard. All students were sent home and lectures started to be delivered through video-conferencing systems. CrownLabs is an open-source project providing an answer to the problem of delivering remote computing laboratories. Simplicity is one of its main characteristics, requiring nothing but a simple web browser to interact with the system and being all heavyweight computations performed at the university premises. Cooperation and mentoring are also encouraged through parallel access to the same remote desktop. The entire system is built up using components from the Kubernetes ecosystem, to replicate a “cloud grade” infrastructure, coupled with custom software implementing the core business logic. To this end, most of the complexity has been delegated to the infrastructure, to speed up the development process and reduce the maintenance burden. An extensive evaluation has been performed in both real and simulated scenarios to validate the overall performance: the results are encouraging, as well as the feedback from the early adopters of the system.
-                            </p>
-                            <a href="https://ieeexplore.ieee.org/document/9136697" target="_blank" rel="noopener noreferrer">Read the article</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel">
-                    <div id="expand-2" class="panel-heading">
-                        <h5>Protecting In-Vehicle Services: Security-Enabled SOME/IP Middleware</h5>
-                        <p>In IEEE Vehicular Technology Magazine (VTM), 2020</p>
-                    </div>
-                    <div id="expandable-2" class="panel-body">
-                        <div class="abstract">
-                            <p><b>Abstract:</b>
-                                With every generation, vehicles are becoming smarter and more oriented toward information and communications technology (ICT). However, computerization is posing unforeseen challenges in a sector for which the first goal must be safety: car hacking has been shown to be a real threat. This article presents a novel mechanism to provide improved security for applications executed in the vehicle based on the principle of defining exactly who can talk to whom. The proposed security framework targets Ethernet-based communications and is tightly integrated within the emerging Scalable service-Oriented MiddlewarE over IP (SOME/IP) middleware. No complex configurations are needed: simple high-level rules, clearly stating the communications allowed, are the only element required to enable the security features. The designed solution has been implemented as a proof of concept (PoC) inside the vsomeip stack to evaluate the validity of the approach proposed: experimental measurements confirm that the additional overhead introduced in end-to-end communication is negligible.
-                            </p>
-                            <a href="papers/01-SecureSOMEIP-VTM.pdf" target="_blank" rel="noopener noreferrer">Read the article</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel">
-                    <div id="expand-1" class="panel-heading">
-                        <h5>Detecting Injection Attacks on Cooperative Adaptive Cruise Control</h5>
-                        <p>In 2019 IEEE Vehicular Networking Conference (VNC), Los Angeles (USA), 4-6 December 2019</p>
-                    </div>
-                    <div id="expandable-1" class="panel-body">
-                        <div class="abstract">
-                            <p><b>Abstract:</b>
-                                Although vehicle platooning promises to improve transportation efficiency and safety by leveraging communication between convoy members, preliminary results in previous work suggest that cyber-attacks could deceive many Cooperative Adaptive Cruise Control algorithms, hence endangering the safety of every participant. This paper deeply analyzes the case of injection attacks. First, we introduce an extensive security analysis carried out through realistic simulations, to demonstrate how even slight and smooth falsification attacks do succeed in fooling the CACC controllers and cause numerous vehicle crashes. Second, we present a novel misbehavior detection technique. It leverages the correlation between multiple motion parameters concerning both single and consecutive vehicles to evaluate the plausibility of the information received from the other members. Extensive validation confirms the effectiveness of the technique proposed: overall, it succeeds to detect all the attacks simulated and prevents the occurrence of safety-critical situations.
-                            </p>
-                            <a href="papers/02-DetectingCACCInjectionAttacks.pdf" target="_blank" rel="noopener noreferrer">Read the article</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div> <!-- end row -->
-    </section> <!-- Publications Section End-->
-
-    <!-- Contact Section
-   ================================================== -->
-    <section id="contact">
-        <div class="row section-head">
-
-            <div class="three columns header-col">
-                <h1><span>Contacts</span></h1>
-            </div>
-            <div class="nine columns main-col">
-                <h4>Address and Phone</h4>
-                <p class="address">
-                    Computer Networks Group (Netgroup),<br>
-                    Department of Control and Computer Engineering (DAUIN),<br>
-                    Politecnico di Torino, Torino, 10129, Italy.<br>
-                    <a href="tel:+390110907098">+39 011 090 7098</a>
+                <div class="modal-popup__desc">
+                    <h5>Secure vsomeip</h5>
+                    <p>
+                        Secure vsomeip introduces security functionalities on top of the vsomeip stack (i.e., open-source implementation of the SOME/IP automotive middleware) through the design and development of a two-phase security protocol tightly integrated within SOME/IP and strongly based on the usage of well-established cryptographic algorithms to provide the actual protection.
                 </p>
+                    <ul class="modal-popup__cat">
+                        <li>SOME/IP</li>
+                        <li>Cyber-security</li>
+                        <li>Cryptography</li>
+                        <li>In-vehicle networks</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+
+                <a href="https://github.com/netgroup-polito/secure-vsomeip" class="modal-popup__details">Visit on GitHub</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <div class="modal-popup-img">
+                    <img src="images/projects/gallery/apvanalyzer.webp" alt="" />
+                    <p>
+                        <span>Photo by <a href="https://unsplash.com/@sharegrid?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ShareGrid</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                        &middot;
+                        <span>Icon by <a href="https://www.flaticon.com/authors/iconsstore">Iconsstore</a> on <a href="https://www.flaticon.com/">Flaticon</a></span>
+                    </p>
+                </div>
+
+                <div class="modal-popup__desc">
+                    <h5>Amazon Prime Video Playback Analyzer</h5>
+                    <p>Amazon Prime Video Playback Analyzer is a Python script analyzing the network traces referred to the playback of a movie and/or TV show from Amazon Prime Video. It plots multiple graphs showing the most relevant information to study how the player reacts to different network conditions. This project has been developed as an assignment for the "Multimedia Communications" and "Python in the Lab" PhD courses taught at Politecnico di Torino.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Python</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+
+                <a href="https://github.com/giorio94/APVanalyzer" class="modal-popup__details">Visit on GitHub</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+
+                <div class="modal-popup-img">
+                    <img src="images/projects/gallery/shareyourfiles.webp" alt="" />
+                    <p>
+                        <span>Photo by <a href="https://unsplash.com/@kkalerry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Klara Kulikova</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                        &middot;
+                        <span>Icon by <a href="https://www.iconfinder.com/Washaweb">Washaweb</a> on <a href="https://www.iconfinder.com">IconFinder</a></span>
+                    </p>
+                </div>
+
+                <div class="modal-popup__desc">
+                    <h5>Share Your Files</h5>
+                    <p>Share Your Files is an application designed to allow peer to peer, on LAN, file sharing. This project has been developed in C++ using the Qt Framework, and it was born as an assignment from the "System and Device Programming" course taught at Politecnico di Torino.</p>
+                    <ul class="modal-popup__cat">
+                        <li>C++</li>
+                        <li>Qt</li>
+                        <li>Network protocols</li>
+                    </ul>
+                </div>
+
+                <a href="https://github.com/giorio94/ShareYourFiles" class="modal-popup__details">Visit on GitHub</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+
+                <div class="modal-popup-img">
+                <img src="images/projects/gallery/coiotesolver.webp" alt="" />
+                <p>
+                    <span>Photo by <a href="https://unsplash.com/@olav_ahrens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olav Ahrens Røtne</a> on <a href="https://unsplash.com/s/photos/puzzle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                </p>
+                </div>
+
+                <div class="modal-popup__desc">
+                    <h5>CoIoTe Solver</h5>
+                    <p>CoIoTe Solver is an application characterized by a heuristic to assign missions to mobile customers (e.g., users are asked to go near to IoT objects to provide relayed Internet connectivity), achieving the desired trade-off between QoS and amount of rewards. This project has been developed in C++, and it was born as an assignment from the "Optimization Methods and Algorithms" course taught at Politecnico di Torino.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Optimization algorithms</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+
+                <a href="https://github.com/giorio94/CoIoTeSolver" class="modal-popup__details">Visit on GitHub</a>
+            </div>
+        </div> <!-- end modal -->
+    </section> <!-- end s-portfolio -->
+
+    <section id="publications" class="s-publications target-section">
+        <div class="row">
+            <div class="column">
+                <h3 class="h2 section-desc">
+                    Publications
+                </h3>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row">
+
+            <div class="column large-12 panel">
+                <div id="expand-7" class="panel-heading">
+                    <h5>Computing Without Borders: The Way Towards Liquid Computing</h5>
+                    <p>Under review, preprint available on arXiv</p>
+                </div>
+                <div id="expandable-7" class="panel-body">
+                    <div class="abstract">
+                        <p><b>Abstract:</b>
+                            Despite the de-facto technological uniformity fostered by the cloud and edge computing paradigms, resource fragmentation across isolated clusters hinders the dynamism in application placement, leading to suboptimal performance and operational complexity. Building upon and extending these paradigms, we propose a novel approach envisioning a transparent continuum of resources and services on top of the underlying fragmented infrastructure, called liquid computing. Fully decentralized, multi-ownership-oriented and intent-driven, it enables an overarching abstraction for improved applications execution, while at the same time opening up for new scenarios, including resource sharing and brokering. Following the above vision, we present liqo, an open-source project that materializes this approach through the creation of dynamic and seamless Kubernetes multi-cluster topologies. Extensive experimental evaluations have shown its effectiveness in different contexts, both in terms of Kubernetes overhead and compared to other open-source alternatives.
+                        </p>
+                        <a href="https://arxiv.org/pdf/2204.05710.pdf">Read the article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column large-12 panel">
+                <div id="expand-6" class="panel-heading">
+                    <h5>When Latency Matters: Measurements and Lessons Learned</h5>
+                    <p>In ACM SIGCOMM Computer Communication Review, 2021</p>
+                </div>
+                <div id="expandable-6" class="panel-body">
+                    <div class="abstract">
+                        <p><b>Abstract:</b>
+                            Several emerging classes of interactive applications are demanding for extremely low-latency to be fully unleashed, with edge computing generally regarded as a key enabler thanks to reduced delays. This paper presents the outcome of a large-scale end-to-end measurement campaign focusing on task-offloading scenarios, showing that moving the computation closer to the end-users, alone, may turn out not to be enough. Indeed, the complexity associated with modern networks, both at the access and in the core, the behavior of the protocols at different levels of the stack, as well as the orchestration platforms used in data-centers hide a set of pitfalls potentially reverting the benefits introduced by low propagation delays. In short, we highlight how ensuring good QoS to latency-sensitive applications is definitely a multi-dimensional problem, requiring to cope with a great deal of customization and cooperation to get the best from the underlying network.
+                        </p>
+                        <a href="papers/05-WhenLatencyMatters.pdf">Read the article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column large-12 panel">
+                <div id="expand-5" class="panel-heading">
+                    <h5>RAYGO: Reserve As You GO</h5>
+                    <p>In IEEE International Conference on Cloud and Big Data Computing (CBDCom 2021), Virtual, 2021</p>
+                </div>
+                <div id="expandable-5" class="panel-body">
+                    <div class="abstract">
+                        <p><b>Abstract:</b>
+                            The capability to predict the precise resource requirements of a microservice-based application is a very important problem for cloud services. In fact, the allocation of abundant resources guarantees an excellent quality of experience (QoE) for the hosted services, but it can translate into unnecessary costs for the cloud customer due to the reserved (but unused) resources. On the other side, poor resource provisioning may turn out in scarce performance when experiencing an unexpected peak of demand. This paper proposes RAYGO, a novel approach for dynamic resource provisioning to microservices in Kubernetes that (i) reliefs the customers from the definition of appropriate execution boundaries, (ii) ensures the right amount of resources at any time, according to the past and the predicted usage, and (iii) operates at the application level, acknowledging the dependency between multiple correlated microservices.
+                        </p>
+                        <a href="papers/04-ReserveAsYouGo.pdf">Read the article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column large-12 panel">
+                <div id="expand-4" class="panel-heading">
+                    <h5>Securing SOME/IP for In-Vehicle Service Protection</h5>
+                    <p>In IEEE Transactions on Vehicular Technology, 2020</p>
+                </div>
+                <div id="expandable-4" class="panel-body">
+                    <div class="abstract">
+                        <p><b>Abstract:</b>
+                            Although high-speed in-vehicle networks are being increasingly adopted by the industry to support emerging use cases, previous research already demonstrated that car hacking is a real threat. This paper formalizes a novel framework proposed to provide improved security to the emerging SOME/IP middleware, without introducing at the same time limitations in the communication patterns available. Most notably, the entire traffic matrix is designed to be configured using simple high-level rules, clearly stating who can talk to whom according to the service abstraction adopted by SOME/IP. Three incremental security levels are made available, accounting for different services being associated with different requirements. The core security protocol, encompassing a session establishment phase followed by the transmission of secured SOME/IP messages, has been formally verified, to prove its correctness in terms of authentication and secrecy properties. Performance-wise, in-depth experimental evaluations conducted with an extended version of vsomeip confirmed the introduction of quite limited penalties compared to the bare unsecured implementation.
+                        </p>
+                        <a href="papers/03-SecureSOMEIP-TVT.pdf">Read the article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column large-12 panel">
+                <div id="expand-3" class="panel-heading">
+                    <h5>CrownLabs – A Collaborative Environment to Deliver Remote Computing Laboratories</h5>
+                    <p>In IEEE Access, 2020</p>
+                </div>
+                <div id="expandable-3" class="panel-body">
+                    <div class="abstract">
+                        <p><b>Abstract:</b>
+                            The coronavirus pandemic hit the entire education sector hard. All students were sent home and lectures started to be delivered through video-conferencing systems. CrownLabs is an open-source project providing an answer to the problem of delivering remote computing laboratories. Simplicity is one of its main characteristics, requiring nothing but a simple web browser to interact with the system and being all heavyweight computations performed at the university premises. Cooperation and mentoring are also encouraged through parallel access to the same remote desktop. The entire system is built up using components from the Kubernetes ecosystem, to replicate a “cloud grade” infrastructure, coupled with custom software implementing the core business logic. To this end, most of the complexity has been delegated to the infrastructure, to speed up the development process and reduce the maintenance burden. An extensive evaluation has been performed in both real and simulated scenarios to validate the overall performance: the results are encouraging, as well as the feedback from the early adopters of the system.
+                        </p>
+                        <a href="https://ieeexplore.ieee.org/document/9136697">Read the article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column large-12 panel">
+                <div id="expand-2" class="panel-heading">
+                    <h5>Protecting In-Vehicle Services: Security-Enabled SOME/IP Middleware</h5>
+                    <p>In IEEE Vehicular Technology Magazine (VTM), 2020</p>
+                </div>
+                <div id="expandable-2" class="panel-body">
+                    <div class="abstract">
+                        <p><b>Abstract:</b>
+                            With every generation, vehicles are becoming smarter and more oriented toward information and communications technology (ICT). However, computerization is posing unforeseen challenges in a sector for which the first goal must be safety: car hacking has been shown to be a real threat. This article presents a novel mechanism to provide improved security for applications executed in the vehicle based on the principle of defining exactly who can talk to whom. The proposed security framework targets Ethernet-based communications and is tightly integrated within the emerging Scalable service-Oriented MiddlewarE over IP (SOME/IP) middleware. No complex configurations are needed: simple high-level rules, clearly stating the communications allowed, are the only element required to enable the security features. The designed solution has been implemented as a proof of concept (PoC) inside the vsomeip stack to evaluate the validity of the approach proposed: experimental measurements confirm that the additional overhead introduced in end-to-end communication is negligible.
+                        </p>
+                        <a href="papers/01-SecureSOMEIP-VTM.pdf">Read the article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column large-12 panel">
+                <div id="expand-1" class="panel-heading">
+                    <h5>Detecting Injection Attacks on Cooperative Adaptive Cruise Control</h5>
+                    <p>In 2019 IEEE Vehicular Networking Conference (VNC), Los Angeles (USA), 4-6 December 2019</p>
+                </div>
+                <div id="expandable-1" class="panel-body">
+                    <div class="abstract">
+                        <p><b>Abstract:</b>
+                            Although vehicle platooning promises to improve transportation efficiency and safety by leveraging communication between convoy members, preliminary results in previous work suggest that cyber-attacks could deceive many Cooperative Adaptive Cruise Control algorithms, hence endangering the safety of every participant. This paper deeply analyzes the case of injection attacks. First, we introduce an extensive security analysis carried out through realistic simulations, to demonstrate how even slight and smooth falsification attacks do succeed in fooling the CACC controllers and cause numerous vehicle crashes. Second, we present a novel misbehavior detection technique. It leverages the correlation between multiple motion parameters concerning both single and consecutive vehicles to evaluate the plausibility of the information received from the other members. Extensive validation confirms the effectiveness of the technique proposed: overall, it succeeds to detect all the attacks simulated and prevents the occurrence of safety-critical situations.
+                        </p>
+                        <a href="papers/02-DetectingCACCInjectionAttacks.pdf">Read the article</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- end row -->
+
+    </section>
+
+    <section id="patents" class="s-publications">
+        <div class="row">
+            <div class="column">
+                <h3 class="h2 section-desc">
+                    Patents
+                </h3>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row">
+
+            <div class="column large-12 panel">
+                <div id="expand-w1" class="panel-heading">
+                    <h5>Improvements in the transmission of data or messages on board a vehicle by means of a SOME/IP communication protocol</h5>
+                    <p>WO/2020/217202 · Issued Oct 29, 2020</p>
+                </div>
+                <div id="expandable-w1" class="panel-body">
+                    <div class="abstract">
+                        <p><b>Abstract:</b>
+                            A method is described for the transmission of messages on a communications network on board a vehicle between an entity requesting a service instance and an entity offering a service instance by means of the SOME/IP communication protocol, which comprises: (a) a step of mutual authentication between the requesting entity and the offering entity in view of a communication associated with a service instance, including (i) verifying the existence and mutual validity of a pre-as signed certificate of the requesting entity and the offering entity, which authorizes its access to the service instance, and (ii) verifying that the security level at which the service is offered by the offering entity is not lower than the minimum security level pre-assigned to the service at the requesting entity and at the offering entity; and (b) transmitting at least one communication message associated with a service instance from the offering entity to the requesting entity and vice versa if the certificate verification and security level verification are successful.
+                        </p>
+                        <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2020217202">See patent</a>
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
 
     <!-- footer
-   ================================================== -->
-    <footer>
+    ================================================== -->
+    <footer class="s-footer">
         <div class="row">
-            <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-            <div class="twelve columns">
-
-                <ul class="social-links">
-                    <li><a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#109;&#x61;&#114;&#x63;&#111;&#x2e;&#x69;&#111;&#x72;&#105;&#111;&#64;&#x70;&#x6f;&#x6c;&#x69;&#116;&#111;&#46;&#105;&#116;" aria-label="Send e-mail"><i class="icon-mail"></i></a></li>
-                    <li><a href="https://www.github.com/giorio94" aria-label="Open GitHub profile"><i class="icon-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/giorio94" aria-label="Open LinkedIn profile"><i class="icon-linkedin"></i></a></li>
-                    <li><a href="skype:marco.iorio_3" aria-label="Show Skype profile"><i class="icon-skype"></i></a></li>
+            <div class="column large-12 s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#109;&#x61;&#114;&#x63;&#111;&#x2e;&#x69;&#111;&#x72;&#105;&#111;&#64;&#x70;&#x6f;&#x6c;&#x69;&#116;&#111;&#46;&#105;&#116;"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.github.com/giorio94"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/giorio94"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=2HiiLSEAAAAJ&hl=it&oi=ao"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a></li>
                 </ul>
-
-                <ul class="copyright">
-                    <li>&copy; Copyright 2019 Marco Iorio</li>
-                    <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
-                </ul>
-
             </div>
 
+            <div class="column large-12 ss-copyright">
+                <span>© Copyright 2022 Marco Iorio</span>
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
         </div>
-    </footer> <!-- Footer End-->
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
 
     <!-- Java Script
     ================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.waypoints/2.0.5/waypoints.min.js"></script>
-
-    <script src="js/init.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.min.js"></script>
 
 </body>
 
